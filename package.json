@@ -34,7 +34,6 @@
     ]
   },
   "jest": {
-    "roots": ["<rootDir>/src/", "<rootDir>/tests/"],
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/node_modules/**",
