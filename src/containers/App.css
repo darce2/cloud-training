@@ -1,10 +1,11 @@
 .app__container {
   text-align: center;
-  background-color: #282c34;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vw;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .btn__add-note {
@@ -17,4 +18,5 @@
 
 .new-note__container {
   padding: 10px;
+  background-color: #282c34;
 }
