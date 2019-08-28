@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import Header from "../components/navbar";
 import Notes from "../components/notes";
@@ -93,6 +94,9 @@ class App extends React.Component {
       <div className="app__container">
         <Header count={count} />
         <div className="new-note__container">
+          <div className="links__container">
+            <Link to="/page">NewPage</Link>
+          </div>
           <button className="btn__add-note" onClick={this.handleNewNote}>Add Note</button>
         </div>
         <Notes

@@ -17,6 +17,9 @@
 }
 
 .new-note__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   padding: 10px;
   background-color: #282c34;
 }
