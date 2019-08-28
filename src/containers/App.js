@@ -22,7 +22,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // Make a request for a user with a given ID
-    axios.get('https://api.myjson.com/bins/')
+    axios.get('https://api.myjson.com/bins/emrdr')
       .then(function (response) {
         // handle success
         console.log(response);
@@ -78,7 +78,7 @@ class App extends React.Component {
 
     this.setState({
       notes: newNotes
-    })
+    });
   }
 
   render() {
@@ -96,7 +96,7 @@ class App extends React.Component {
           handleContentChange={this.handleContentChange}
           handleTitleChange={this.handleTitleChange}
           handleDeleteNote={this.handleDeleteNote} />
-      </div>
+      </div>  
     );
   }
 }
