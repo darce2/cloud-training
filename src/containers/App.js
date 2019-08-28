@@ -21,7 +21,6 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-
     // Make a request for a user with a given ID
     axios.get('https://api.myjson.com/bins/')
       .then(function (response) {
@@ -43,7 +42,6 @@ class App extends React.Component {
     this.setState({
       notes: newNotes
     });
-
   }
 
   handleDeleteNote = index => {

@@ -3,14 +3,6 @@ import ReactDOM from 'react-dom';
 import App from '../../containers/App';
 
 import { shallow } from "enzyme";
-
-// not using enzyme
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
-
 // using enzyme
 describe('App', () => {
   it('matches snapshot', () => {
