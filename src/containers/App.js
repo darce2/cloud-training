@@ -90,16 +90,18 @@ class App extends React.Component {
     const count = notes.length;
 
     return (
-      <div className="app__container">
+      <div className="root__container">
         <Header count={count} />
-        <div className="new-note__container">
-          <button className="btn__add-note" onClick={this.handleNewNote}>Add Note</button>
+        <div className="app__container">
+          <div className="new-note__container">
+            <button className="btn__add-note" onClick={this.handleNewNote}>Add Note</button>
+          </div>
+          <Notes
+            notes={notes}
+            handleContentChange={this.handleContentChange}
+            handleTitleChange={this.handleTitleChange}
+            handleDeleteNote={this.handleDeleteNote} />
         </div>
-        <Notes
-          notes={notes}
-          handleContentChange={this.handleContentChange}
-          handleTitleChange={this.handleTitleChange}
-          handleDeleteNote={this.handleDeleteNote} />
       </div>
     );
   }
